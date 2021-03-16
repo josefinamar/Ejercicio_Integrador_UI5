@@ -1,0 +1,25 @@
+{
+    "fecha": "",
+    "proveedor": [
+        {
+            "nombre": "Titanium"
+        },
+        {
+            "nombre": "Ultrasonic United"
+        },
+        {
+            "nombre": "Fasttech"
+        },
+        {
+            "nombre": "Technocom"
+        },
+        {
+            "nombre": "Speaker Experts"
+        },
+        {
+            "nombre": "Alpha Printers"
+        }
+    ],
+    "proveedor_selec": "",
+    "pais": ""
+}

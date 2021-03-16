@@ -1,0 +1,70 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+
+    <Table id="idProductsTable"
+		inset="false"
+		items="{modeloProductos>/productos}">
+		<headerToolbar>
+			<OverflowToolbar width="100%">
+				<content>
+                    
+                    <SearchField width="98%" placeholder="{i18n>tableSearchField}" liveChange="onSearch"></SearchField>
+
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="{i18n>tableColProducto}" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="{i18n>tableColProveedor}" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true">
+				<Text text="{i18n>tableColTamaño}" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true">
+				<Text text="{i18n>tableColPeso}" />
+			</Column>
+			<Column>
+				<Text text="{i18n>tableColValor}" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem  type="Active" press="onOpenInfoDialog">
+				<cells>
+					<ObjectIdentifier
+						title="{modeloProductos>producto}"
+						/>
+					<Text
+						text="{modeloProductos>proveedor}" />
+					<Text
+						text="{modeloProductos>tamaño}" />
+					<ObjectNumber
+						number="{modeloProductos>peso}"
+						unit="{modeloProductos>unidadPeso}"
+						state="{
+							parts: [
+								{path: 'modeloProductos>peso'},
+								{path: 'modeloProductos>unidadPeso'}
+							],
+							formatter: '.Formatter.formatPesoState'
+						}" />
+					<ObjectNumber
+							number="{path: 'modeloProductos>valor', formatter: '.Formatter.formatValor'}"
+                            unit="EUR"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
+</core:FragmentDefinition>

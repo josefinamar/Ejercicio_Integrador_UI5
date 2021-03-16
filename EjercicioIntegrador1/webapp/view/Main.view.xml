@@ -1,0 +1,42 @@
+<mvc:View controllerName="EjercicioIntegrador1.EjercicioIntegrador1.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+
+	<Page id="page" title="{i18n>title}">
+		<content >
+            <HBox >
+                <Toolbar>
+    
+                    <DatePicker
+                        id="idFecha"
+                        displayFormat="short"
+                        placeholder="{i18n>mainInputFecha}"
+                        class="sapUiSmallMargin"
+                        value="{modeloSearch>/fecha}"/>
+
+
+                     <Select
+                        forceSelection="false"
+                        selectedKey="{modeloSearch>/proveedor_selec}"
+                        items="{modeloSearch>/proveedor}"
+                        class="sapUiSmallMargin">
+                        <core:Item key="{modeloSearch>nombre}" text="{modeloSearch>nombre}" />
+                    
+                    </Select> 
+
+                    <Input
+			            id="inputText"
+			            placeholder="{i18n>mainInputPais}"
+			           class="sapUiSmallMargin"
+                        value="{modeloSearch>/pais}"/>
+
+                    <Button type="Emphasized" text="{i18n>mainButton}" press="onPress" class="sapUiSmallMargin"/>
+               
+                </Toolbar>
+                
+            </HBox>
+
+            <core:Fragment fragmentName="EjercicioIntegrador1.EjercicioIntegrador1.fragments.Table" type="XML" id="fragmentTable"/>
+        
+        </content>
+	</Page>
+
+</mvc:View>

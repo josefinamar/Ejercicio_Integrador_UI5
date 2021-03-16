@@ -1,0 +1,52 @@
+{
+    "productos": [
+        {
+            "producto": "10'' Portable DVD player",
+            "proveedor": "Titanium",
+            "tamaño": "24 x 19.5 x 29 cm",
+            "peso": 0.84,
+            "unidadPeso": "KG",
+            "valor": 5400
+        },
+        {
+            "producto": "Astro Phone 6",
+            "proveedor": "Ultrasonic United",
+            "tamaño": "8 x 6 x 1.5 cm",
+            "peso": 0.24,
+            "unidadPeso": "KG",
+            "valor": 25000
+        },
+        {
+            "producto": "Blaster Extreme",
+            "proveedor": "Fasttech",
+            "tamaño": "13 x 11 x 17.5 cm",
+            "peso": 1.4,
+            "unidadPeso": "KG",
+            "valor": 17000
+        },
+        {
+            "producto": "Cordless Mouse",
+            "proveedor": "Technocom",
+            "tamaño": "6 x 14.5 x 3.5 cm",
+            "peso": 0.4,
+            "unidadPeso": "KG",
+            "valor": 1600
+        },
+        {
+            "producto": "Camcoder View",
+            "proveedor": "Speaker Experts",
+            "tamaño": "48 x 31 x 27 cm",
+            "peso": 3.8,
+            "unidadPeso": "KG",
+            "valor": 7000
+        },
+        {
+            "producto": "Copymaster",
+            "proveedor": "Alpha Printers",
+            "tamaño": "45 x 42 x 22 cm",
+            "peso": 13,
+            "unidadPeso": "KG",
+            "valor": 30000
+        }
+    ]
+}
